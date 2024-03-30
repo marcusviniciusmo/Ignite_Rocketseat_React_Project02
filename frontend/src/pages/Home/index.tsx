@@ -9,6 +9,28 @@ import {
   MinutesAmountInput,
 } from './styles';
 
+// Controlled
+// const [task, setTask] = useState('');
+// <TaskInput
+//   id="task"
+//   list="task-suggestions"
+//   placeholder="Dê um nome para o seu projeto"
+//   onChange={(e) => setTask(e.target.value)}
+//   value={task}
+// />;
+
+// Uncontrolled
+// function resetForm(event) {
+//   event.target.task.value;
+// }
+
+// <TaskInput
+//   id="task"
+//   name="task"
+//   list="task-suggestions"
+//   placeholder="Dê um nome para o seu projeto"
+// />;
+
 export function Home() {
   return (
     <HomeContainer>
