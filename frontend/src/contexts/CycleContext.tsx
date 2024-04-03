@@ -46,6 +46,7 @@ export function CycleContextProvider({ children }: CyclesContextProviderProps) {
     setCycles((state) =>
       state.map((cycle) => {
         if (cycle.id === activeCycleId) {
+          setActiveCycleId(null);
           return { ...cycle, finishedDate: new Date() };
         } else {
           return cycle;
