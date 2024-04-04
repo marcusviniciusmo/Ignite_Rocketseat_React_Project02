@@ -48,7 +48,7 @@ export function cyclesReducer(state: CyclesState, action: any) {
       }
 
       return produce(state, (draft) => {
-        state.activeCycleId = null;
+        draft.activeCycleId = null;
         draft.cycles[currentCycleIndex].finishedDate = new Date();
       });
     }
